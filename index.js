@@ -27,7 +27,7 @@ const config = {
       messages: [      
         { text: "/is accept EymanBey", delay: 10 },
         { text: "/skyblock", delay: 5 },
-        { text: "/is go Oyuntozu51", delay: 10 },                  
+        { text: "/is go Oyuntozu5151", delay: 10 },                  
         { text: "/home 1", delay: 15 }
       ]
     },
