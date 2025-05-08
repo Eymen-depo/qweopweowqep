@@ -8,12 +8,12 @@ let botConnected = false; // Bot bağlantı durumu
 // Bot yapılandırma ayarları
 const config = {
   botAccount: {
-    username: "MujluPuding",
+    username: "ProjectsAFK",
     password: "fake3",
     type: "legacy"
   },
   server: {
-    ip: "play.reborncraft.pw",
+    ip: "mc.projects.gg",
     port: 25565,
     version: "1.19.3"
   },
@@ -25,10 +25,10 @@ const config = {
     chatMessages: {
       enabled: true,
       messages: [      
-        { text: "/is accept EymanBey", delay: 10 },
-        { text: "/skyblock", delay: 5 },
-        { text: "/is go Oyuntozu5151", delay: 10 },                  
-        { text: "/home 1", delay: 15 }
+        { text: "/gaia delay: 10 },
+        { text: "/home", delay: 10 },
+        { text: "", delay: 10 },                  
+        { text: "", delay: 15 }
       ]
     },
     antiAfk: {
@@ -65,7 +65,7 @@ function startBot() {
     botConnected = true;
 
     if (config.utils.autoAuth.enabled) {
-      bot.chat(`/login ${config.utils.autoAuth.password}`);
+      bot.chat(`/g ${config.utils.autoAuth.password}`);
       console.log(`Otomatik giriş: /login ${config.utils.autoAuth.password}`);
     }
 
@@ -92,7 +92,7 @@ function startBot() {
         }, 500); // 0.5 saniye hareket et
         
         console.log(`Bot ${randomDirection} yönüne hareket etti.`);
-      }, 10000); // Her 10 saniyede bir hareket et
+      }, 21000); // Her 10 saniyede bir hareket et
     }
   });
 
