@@ -15,7 +15,7 @@ const config = {
   server: {
     ip: "mc.projects.gg",
     port: 19132,
-    version: "1.21.1"
+    version: "1.21"
   },
   utils: {
     autoAuth: {
