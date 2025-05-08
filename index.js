@@ -15,7 +15,7 @@ const config = {
   server: {
     ip: "mc.projects.gg",
     port: 19132,
-    version: "1.21"
+    version: "1.19.3"
   },
   utils: {
     autoAuth: {
@@ -25,7 +25,7 @@ const config = {
     chatMessages: {
       enabled: true,
       messages: [      
-        { text: "/g ffake3", delay: 10 },
+        { text: "/g fake3", delay: 5 },
         { text: "/gaia", delay: 10 },
         { text: "/home", delay: 10 },                  
         { text: "", delay: 15 }
