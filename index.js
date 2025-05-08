@@ -25,7 +25,7 @@ const config = {
     chatMessages: {
       enabled: true,
       messages: [      
-        { text: "/gaia delay: 10 },
+        { text: "/gaia", delay: 10 },
         { text: "/home", delay: 10 },
         { text: "", delay: 10 },                  
         { text: "", delay: 15 }
