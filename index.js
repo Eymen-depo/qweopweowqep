@@ -92,7 +92,7 @@ function startBot() {
         }, 500); // 0.5 saniye hareket et
         
         console.log(`Bot ${randomDirection} yönüne hareket etti.`);
-      }, 21000); // Her 10 saniyede bir hareket et
+      }, 15000); // Her 10 saniyede bir hareket et
     }
   });
 
