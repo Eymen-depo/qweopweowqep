@@ -14,8 +14,8 @@ const config = {
   },
   server: {
     ip: "mc.projects.gg",
-    port: 25565,
-    version: "1.19.3"
+    port: 19132,
+    version: "1.21.1"
   },
   utils: {
     autoAuth: {
@@ -25,9 +25,9 @@ const config = {
     chatMessages: {
       enabled: true,
       messages: [      
+        { text: "/g ffake3", delay: 10 },
         { text: "/gaia", delay: 10 },
-        { text: "/home", delay: 10 },
-        { text: "", delay: 10 },                  
+        { text: "/home", delay: 10 },                  
         { text: "", delay: 15 }
       ]
     },
@@ -92,7 +92,7 @@ function startBot() {
         }, 500); // 0.5 saniye hareket et
         
         console.log(`Bot ${randomDirection} yönüne hareket etti.`);
-      }, 15000); // Her 10 saniyede bir hareket et
+      }, 5000); // Her 10 saniyede bir hareket et
     }
   });
 
