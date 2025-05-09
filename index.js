@@ -13,8 +13,8 @@ const config = {
     type: "legacy"
   },
   server: {
-    ip: "mc.projects.gg",
-    port: 19132,
+    ip: "play.projects.gg",
+    port: 25565,
     version: "1.19.3"
   },
   utils: {
@@ -25,14 +25,14 @@ const config = {
     chatMessages: {
       enabled: true,
       messages: [      
-        { text: "/g fake3", delay: 5 },
+        { text: "/g fake3", delay: 10 },
         { text: "/gaia", delay: 10 },
-        { text: "/home", delay: 10 },                  
-        { text: "", delay: 15 }
+        { text: "/home", delay: 30 },                  
+        { text: "/kit yemek", delay: 500 }
       ]
     },
     antiAfk: {
-      enabled: true
+      enabled: false
     },
     autoReconnect: true,
     autoReconnectDelay: 5000
@@ -66,7 +66,7 @@ function startBot() {
 
     if (config.utils.autoAuth.enabled) {
       bot.chat(`/g ${config.utils.autoAuth.password}`);
-      console.log(`Otomatik giriş: /login ${config.utils.autoAuth.password}`);
+      console.log(`Otomatik giriş: /g ${config.utils.autoAuth.password}`);
     }
 
     // Mesaj gönderme işlevi
@@ -89,10 +89,10 @@ function startBot() {
         bot.setControlState(randomDirection, true);
         setTimeout(() => {
           bot.setControlState(randomDirection, false);
-        }, 500); // 0.5 saniye hareket et
+        }, 100); // 0.5 saniye hareket et
         
         console.log(`Bot ${randomDirection} yönüne hareket etti.`);
-      }, 5000); // Her 10 saniyede bir hareket et
+      }, 30000); // Her 10 saniyede bir hareket et
     }
   });
 
