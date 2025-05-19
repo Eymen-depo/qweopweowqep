@@ -8,8 +8,8 @@ let botConnected = false; // Bot bağlantı durumu
 // Bot yapılandırma ayarları
 const config = {
   botAccount: {
-    username: "BandirmaVapuru",
-    password: "fake3",
+    username: "Eymanbey",
+    password: "2141124",
     type: "legacy"
   },
   server: {
@@ -20,15 +20,15 @@ const config = {
   utils: {
     autoAuth: {
       enabled: true,
-      password: "fake3"
+      password: "2141124"
     },
     chatMessages: {
       enabled: true,
       messages: [      
-        { text: "/g fake3", delay: 10 },
+        { text: "/g 2141124", delay: 10 },
         { text: "/gaia", delay: 10 },
-        { text: "/home", delay: 30 },                  
-        { text: "/kit yemek", delay: 500 }
+        { text: "/afk", delay: 30 },                  
+        { text: "", delay: 500 }
       ]
     },
     antiAfk: {
