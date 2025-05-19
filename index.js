@@ -8,7 +8,7 @@ let botConnected = false; // Bot bağlantı durumu
 // Bot yapılandırma ayarları
 const config = {
   botAccount: {
-    username: "Eymanbey",
+    username: "EymanBey",
     password: "2141124",
     type: "legacy"
   },
